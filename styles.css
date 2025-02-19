@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: orangered;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 5px solid orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: 5px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 90vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-input {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.inputwrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6347;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e5533d;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    flex-wrap: wrap; 
+}
+
+li span {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 0;
+    margin-right: 0;
+   
+}
+
+.error-message {
+    width: 35%;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: 297px;
+    display: none; 
+}
+
+.btnwrap{
+    width: 20%;
+}
+
+
+.edit-btn, .delete-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #ff4444;
+}
+
+.edit-btn:hover {
+    background: #388e3c;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        height: auto;
+        padding: 15px;
+        margin-bottom: 200px;
+    }
+
+    .todo-input {
+       display: flex; 
+        gap: 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .inputwrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnwrap {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .error-message {
+        width: 35%;
+        font-size: 14px;
+        justify-content: flex-start;
+        display: none; 
+    }
+
+    button {
+        width: 100%;
+        background-color: orangered; 
+    }
+
+
+
+    li {
+       display: flex; 
+        align-items: center; 
+        gap: 5px;
+    }
+
+    .edit-btn, .delete-btn {
+        width: 20%; 
+        text-align: center;
+    }
+
+    .error-message {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
